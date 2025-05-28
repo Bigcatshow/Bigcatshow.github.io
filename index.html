@@ -2,16 +2,33 @@
 <html>
   <head>
     <title>My Tools</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
     <style>
-      nav ul {
-        list-style-type: none;
-        padding: 0;
+      body {
+        padding: 20px;
       }
-      nav li {
-        margin: 5px 0;
+
+      .tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
       }
+
+      .tabs a {
+        padding: 10px 20px;
+        background-color: #007acc;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+      }
+
+      .tabs a:hover {
+        background-color: #005fa3;
+      }
+
       button {
         font-size: 16px;
         padding: 10px 20px;
@@ -28,14 +45,11 @@
 
     <hr>
 
-    <h2>Other Pages</h2>
-    <nav>
-      <ul>
-        <li><a href="tools.html">Tools Page</a></li>
-        <li><a href="app1.html">App 1 (Embedded)</a></li>
-        <li><a href="app2.html">App 2</a></li>
-        <li><a href="folder/page.html">Folder Page</a></li>
-      </ul>
-    </nav>
+    <div class="tabs">
+      <a href="tools.html">Tools</a>
+      <a href="app1.html">App 1</a>
+      <a href="app2.html">App 2</a>
+      <a href="folder/page.html">Folder Page</a>
+    </div>
   </body>
 </html>
