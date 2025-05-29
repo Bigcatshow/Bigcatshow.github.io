@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>School Website</title>
+  <style>
+    body, html {
+      margin: 0; padding: 0; height: 100vh; width: 100vw;
+    }
+    .container {
+      display: grid;
+      grid-template-rows: 20% 80%;
+      height: 100%;
+      width: 100%;
+    }
+    header {
+      background: #ccc;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .main {
+      display: grid;
+      grid-template-columns: 20% 80%;
+    }
+    nav {
+      background: #eee;
+      padding: 10px;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+    section {
+      padding: 10px;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Content from Frame-1.html can go here or be loaded dynamically -->
+      <h1>Header / Frame 1 content</h1>
+    </header>
+    <div class="main">
+      <nav>
+        <!-- Content from Frame-2.html -->
+        <p>Sidebar / Frame 2 content</p>
+      </nav>
+      <section>
+        <!-- Content from Frame-3.html -->
+        <p>Main content / Frame 3 content</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
