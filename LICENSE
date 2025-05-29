@@ -1,21 +1,62 @@
-MIT License
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Tools</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+    <style>
+      body {
+        padding: 20px;
+        background-image: url('Rosetta_Stone.JPG');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
 
-Copyright (c) 2025 Bigcatshow
+      .tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+      .tabs a {
+        padding: 10px 20px;
+        background-color: #007acc;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+      }
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+      .tabs a:hover {
+        background-color: #005fa3;
+      }
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+      button {
+        font-size: 16px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to My Site</h1>
+    <p>Click the button to open my app:</p>
+    <a href="https://my-streamlit-app-5ccz.onrender.com/" target="_blank" rel="noopener noreferrer">
+      <button>Open My App</button>
+    </a>
+
+    <hr>
+
+    <div class="tabs">
+      <a href="tools.html">Tools</a>
+      <a href="app1.html">App 1</a>
+      <a href="app2.html">App 2</a>
+      <a href="app3.html">App 3</a>
+      <a href="folder/page.html">Folder Page</a>
+    </div>
+  </body>
+</html>
